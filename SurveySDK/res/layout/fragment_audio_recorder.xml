@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/button_record"
+        android:layout_width="64dip"
+        android:layout_height="wrap_content"
+        android:src="@drawable/record" />
+
+    <ImageButton
+        android:id="@+id/button_play"
+        android:layout_width="64dip"
+        android:layout_height="wrap_content"
+        android:src="@drawable/play"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/button_stop"
+        android:layout_width="64dip"
+        android:layout_height="wrap_content"
+        android:src="@drawable/stop"
+        android:visibility="invisible" />
+
+    <Chronometer
+        android:id="@+id/current_position"
+        android:layout_width="60dip"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse" />
+
+    <TextView
+        android:id="@+id/length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse" />
+
+</LinearLayout>

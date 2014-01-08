@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <!--
+     <TextView 
+		android:id="@+id/txtValue"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:clickable="false"
+		android:focusable="false"
+		style="@style/list_text"
+		android:gravity="center_vertical"
+		android:layout_marginLeft="5dp"
+	/>
+    -->
+
+    <com.survey.android.custom_widgets.FontTextView
+        android:id="@+id/txtValue"
+        style="@style/sdk_text_default"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center_vertical" />
+
+    <ImageView
+        android:id="@+id/ivStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/list_arrow_right"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center_vertical" />
+
+</LinearLayout>

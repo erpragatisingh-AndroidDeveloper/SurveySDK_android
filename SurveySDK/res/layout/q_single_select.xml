@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/question_root_layout"
+	style="@style/sdk_background_default"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:eventsInterceptionEnabled="false"
+	android:focusable="true"
+	android:focusableInTouchMode="true"
+	android:orientation="vertical" >
+	<ScrollView
+		android:id="@+id/scroller"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_marginBottom="10dp"
+		android:layout_weight="1"
+		android:fadeScrollbars="false"
+		android:fillViewport="true"
+		android:scrollbarThumbVertical="@drawable/scroll_bar" >
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical" >
+			<!--
+                 <TextView
+				android:id="@+id/txtTitle"
+				style="@style/button_text"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/title"
+				android:gravity="center_horizontal|center_vertical" />
+			-->
+			<include
+				android:id="@+id/navigation_bar"
+				style="@style/navigation_bar_default"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				layout="@layout/top_bar_smaller_text" >
+			</include>
+			<!-- TODO check if second navigation_bar identifier cause some error! -->
+			<include
+				android:id="@+id/navigation_bar"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				layout="@layout/q_navigation" >
+			</include>
+			<LinearLayout
+				android:id="@+id/llContainer"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_gravity="center_vertical|center_horizontal"
+				android:layout_marginBottom="15dp"
+				android:layout_marginLeft="15dp"
+				android:layout_marginRight="15dp"
+				android:layout_marginTop="15dp"
+				android:layout_weight="1"
+				android:gravity="center_vertical"
+				android:orientation="vertical" >
+				<RelativeLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="10dp"
+					android:gravity="center_vertical" >
+					<Button
+						android:id="@+id/btnClear"
+						style="@style/btnClear_default"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:layout_marginBottom="10dp"
+						android:gravity="center_vertical|center_horizontal"
+						android:paddingLeft="5dp"
+						android:paddingRight="5dp"
+						android:text="@string/clear"
+						android:visibility="gone" />
+					<com.survey.android.custom_widgets.FontTextView
+						android:id="@+id/txtRemark"
+						style="@style/sdk_text_default.question_text"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_toLeftOf="@id/btnClear"
+						android:gravity="center_horizontal|center_vertical"
+						android:paddingLeft="5dp"
+						android:paddingRight="5dp"
+						android:text="@string/select_one"
+						android:visibility="invisible" />
+				</RelativeLayout>
+				<com.survey.android.custom_widgets.PollSelectionTable
+					android:id="@+id/whChoices"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:background="@drawable/border_round_transparent"
+					android:clickable="true"
+					android:focusable="true"
+					android:focusableInTouchMode="true"
+					android:orientation="vertical"
+					android:paddingBottom="10dp" />
+				<!--
+                     <com.survey.android.wheel.widget.WheelView
+					android:id="@+id/whChoices"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:gravity="center_vertical"
+					android:cacheColorHint="#00000000"
+					android:choiceMode="singleChoice"
+					android:clickable="true"
+					android:focusable="true"
+					android:focusableInTouchMode="true" />
+				-->
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+	<include
+		android:id="@+id/bottom_bar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		layout="@layout/q_bottom_bar" >
+	</include>
+</LinearLayout>

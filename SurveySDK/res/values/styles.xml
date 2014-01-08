@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- REGULAR PHONES -->
+    <style name="sdk_button_text_default.button_text"></style>
+
+    <style name="sdk_title_default.title_text"></style>
+
+    <style name="sdk_title_default.header_title_text">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="question">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="sdk_text_default.question_text">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="sdk_text_default.list_text">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="sdk_text_default.row_text">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="sdk_text_default.label_text">
+        <item name="android:textSize">9sp</item>
+    </style>
+
+    <style name="sdk_text_default.notification_text">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="sdk_text_default.notification_text_small">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="sdk_text_default.notification_text_smaller">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="sdk_text_default.notification_text_green">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="sdk_text_default.notification_text_green_bigger">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="sdk_text_default.notification_text_green_small">
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="sdk_text_default.notification_text_white">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="sdk_text_default.text_white_bold">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="sdk_text_default.notification_text_link_blue">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/link_blue</item>
+    </style>
+
+    <style name="sdk_button_text_default.back_button_text">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="sdk_text_default.spinner_text">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="sdk_text_default.ratings_text_white">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="WidgetBackground_4_1">
+        <item name="android:background">@drawable/widget_4_1</item>
+    </style>
+
+    <style name="WidgetBackground_2_2">
+        <item name="android:background">@drawable/widget_2_2</item>
+    </style>
+
+    <style name="WidgetTitle">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="WidgetText">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>

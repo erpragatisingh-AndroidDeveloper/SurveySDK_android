@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/trCell"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center_horizontal|center_vertical"
+	android:layout_weight="1"
+	android:baselineAligned="false"
+	android:gravity="center_horizontal"
+	android:paddingBottom="13dp" >
+	<com.survey.android.custom_widgets.FontTextView
+		android:id="@+id/txtRowName"
+		style="@style/sdk_text_default.ratings_text_white"
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:ellipsize="none"
+		android:gravity="center_vertical|center_horizontal"
+		android:maxLines="10"
+		android:paddingLeft=".5dp" />
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:gravity="center_vertical" >
+		<com.survey.android.custom_widgets.FontTextView
+			android:id="@+id/txtVal"
+			style="@style/sdk_text_default.ratings_text_white"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:ellipsize="none"
+			android:gravity="center_horizontal"
+			android:maxLines="1"
+			android:paddingLeft=".5dp" />
+		<SeekBar
+			android:id="@+id/sbRowValue"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/txtVal"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="25dp"
+			android:gravity="center_vertical"
+			android:progressDrawable="@drawable/seek_bar" />
+	</RelativeLayout>
+</TableRow>

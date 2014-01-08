@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/survey_list_root_layout"
+    style="@style/sdk_background_default"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+ 
+    <include
+        android:id="@+id/top_bar_smaller_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top_bar" >
+    </include>
+
+    <ListView
+        android:id="@+id/lvCatSurv"
+        style="@style/lvCatSurv_default"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000" >
+    </ListView>
+
+</LinearLayout>

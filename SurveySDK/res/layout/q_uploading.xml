@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/question_root_layout"
+	style="@style/sdk_background_default"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_gravity="center_horizontal"
+	android:orientation="vertical" >
+	<LinearLayout
+		android:id="@+id/llCompleted"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_gravity="center_horizontal"
+		android:orientation="vertical" >
+		<TextView
+			android:id="@+id/txtTitle"
+			style="@style/txtTitle_uploading_default"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal|center_vertical" />
+		<include
+			android:id="@+id/navigation_bar"
+			style="@style/navigation_bar_default"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			layout="@layout/q_navigation" >
+		</include>
+		<com.survey.android.custom_widgets.FontTextView
+			android:id="@+id/textMessage"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal|center_vertical"
+			android:layout_margin="30dip"
+			android:gravity="center_horizontal|center_vertical"
+			android:text="@string/uploadingPaused"
+			 >
+		</com.survey.android.custom_widgets.FontTextView>
+	</LinearLayout>
+</LinearLayout>

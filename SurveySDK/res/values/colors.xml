@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="white">#ffffff</color>
+	<color name="black">#000000</color>
+	<color name="green">#148c14</color>
+	<color name="green_slider">#8AC23E</color>
+	<color name="gray_text">#7E7A80</color>
+	<color name="link_blue">#0000CC</color>
+	<color name="red">#ff0000</color>
+	<color name="gray">#a3a3a3</color>
+	<color name="background">#eeeeee</color>
+	<color name="status_background">#dddddd</color>	
+	<color name="title_background">#dddddd</color>	
+	<color name="text">#3c3c3c</color>
+	<color name="button_text">#6b6b6b</color>
+	<color name="title_text">#6b6b6b</color>	
+	<color name="button">#dddddd</color>				
+	<color name="dashboard_single_item">#dddddd</color>
+</resources>

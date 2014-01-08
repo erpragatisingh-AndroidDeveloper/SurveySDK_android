@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:drawable="@drawable/unchecked_terms_small" android:state_checkable="true"/> <!-- pressed -->
+	<item android:drawable="@drawable/checked_terms_small" android:state_checked="true"/> <!-- focused -->
+	<item android:drawable="@drawable/unchecked_terms_small"/> <!-- default -->
+</selector>

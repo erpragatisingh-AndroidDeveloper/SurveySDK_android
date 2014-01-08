@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SurveyDemo</string>
+    <string name="app_widget">SurveyDemo</string>    
+    <string name="action_settings">Settings</string>
+    <string name="action_exit">Exit</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

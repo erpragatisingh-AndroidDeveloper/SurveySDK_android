@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notification_root_layout"
+    style="@style/sdk_background_default"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/navigation_bar"
+        style="@style/navigation_bar_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top_bar_smaller_text" >
+    </include>
+
+    <TextView
+        android:id="@+id/txtSurveyTitle"
+        style="@style/sdk_title_default"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/reward"
+            style="@style/linearLayout_dashboard_default"            
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dip"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/notification_reward_label"
+                style="@style/sdk_title_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dip"
+                android:text="@string/reward" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtReward"
+                style="@style/sdk_text_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="2dip"
+                android:text="@string/cash_zero"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/imbStartSurvey"
+        style="@style/button1_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/start" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <WebView
+                android:id="@+id/wvDescription"
+                style="@style/sdk_text_default.notification_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

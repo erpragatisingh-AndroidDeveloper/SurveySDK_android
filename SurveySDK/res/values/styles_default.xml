@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- General notes: all styles in this file must end with "_default" -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- These are default values -->
+
+    <style name="sdk_title_default" parent="@android:style/TextAppearance">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/title_text</item>
+    </style>
+
+    <style name="sdk_text_default" parent="@android:style/TextAppearance">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="sdk_button_text_default" parent="@android:style/TextAppearance">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/button_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="sdk_background_default">
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <!-- These styles are used in layout/top_bar.xml -->
+
+    <style name="top_bar_layout_default">
+        <item name="android:background">@color/status_background</item>
+    </style>
+
+    <style name="txtTitle_default" parent="@style/sdk_title_default.title_text" />
+
+    <style name="txtHeader_Title_default" parent="@style/sdk_title_default.header_title_text" />
+
+    <!-- These styles are used in layout/top_bar_smaller_text.xml (question, notification, survey_list) -->
+
+    <style name="txtTitleSmallerText_default" parent="sdk_button_text_default.button_text" />
+
+    <!-- These styles are used in layout/dashboard.xml -->
+
+    <style name="textView_dashboard_default" parent="@style/sdk_title_default" />
+
+    <style name="linearLayout_dashboard_default">
+        <item name="android:background">@color/status_background</item>
+    </style>
+
+    <style name="textView_value_dashboard_default" parent="@style/sdk_text_default" />
+
+    <style name="button1_default" parent="@style/sdk_button_text_default.button_text">
+        <item name="android:background">@drawable/selector_button</item>
+    </style>
+
+    <!-- These styles are used in layout/notification.xml -->
+
+    <style name="navigation_bar_default" />
+
+    <style name="txtSurveyTitle_default" parent="@style/sdk_text_default.notification_text_small" />
+
+    <style name="notification_start_date_label_default" parent="@style/sdk_text_default.notification_text_green" />
+
+    <style name="txtStartDate_default" parent="@style/sdk_text_default.notification_text_small" />
+
+    <style name="notification_end_date_label_default" parent="@style/sdk_text_default.notification_text_green" />
+
+    <style name="txtEndDate_default" parent="@style/sdk_text_default.notification_text_small" />
+
+    <style name="notification_reward_label_default" parent="@style/sdk_text_default.notification_text_green" />
+
+    <style name="txtReward_default" parent="@style/sdk_text_default.notification_text" />
+
+    <style name="imbStartSurvey_default" parent="@style/sdk_button_text_default.button_text">
+        <item name="android:background">@drawable/selector_button</item>
+    </style>
+
+    <!-- These styles are related to layout/q_* layouts -->
+
+    <style name="btnClearAll_default" parent="@style/sdk_button_text_default.button_text">
+        <item name="android:background">@drawable/selector_button</item>
+    </style>
+
+    <!--
+    q_poll_completed.xml, q_ratings.xml, q_ratings_scale_labeled.xml, q_ratings_scale_labeled.xml
+    q_read_only.xml, q_single_photo.xml, q_single_select.xml, q_text_area.xml, q_text_box.xml
+    q_uploading.xml, q_video.xml
+    -->
+
+
+    <!-- q_bottom_bar -->
+
+    <style name="btnNextQuestionBottom_default" parent="@style/sdk_button_text_default.button_text">
+        <item name="android:background">@drawable/selector_button</item>
+    </style>
+
+    <!-- q_poll_completed.xml -->
+
+    <style name="poll_completed_top_bar_default" />
+
+    <style name="button_unnamed_default">
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="txtTitle_completed_default" parent="@style/sdk_button_text_default.button_text">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/status_background</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+    </style>
+
+    <style name="btnSubmit_default" parent="@style/sdk_button_text_default.button_text">
+        <item name="android:background">@drawable/selector_button</item>
+    </style>
+
+    <!-- q_single_photo.xml -->
+
+    <style name="btnCapture_single_photo_default" parent="@style/sdk_button_text_default.button_text">
+        <item name="android:background">@drawable/selector_button</item>
+    </style>
+
+    <style name="btnSelect_single_photo_default" parent="@style/sdk_button_text_default.button_text">
+        <item name="android:background">@drawable/selector_button</item>
+    </style>
+
+    <!-- q_single_select.xml -->
+
+    <style name="btnClear_default" parent="@style/sdk_button_text_default.button_text">
+        <item name="android:background">@drawable/selector_button</item>
+    </style>
+
+    <!-- q_uploading.xml -->
+
+    <style name="txtTitle_uploading_default" parent="sdk_text_default.notification_text_small">
+        <item name="android:background">@color/status_background</item>
+    </style>
+
+    <!-- q_video.xml -->
+
+    <style name="btnCapture_default" parent="@style/sdk_button_text_default.button_text">
+        <item name="android:background">@drawable/selector_button</item>
+    </style>
+
+    <style name="btnPlay_default" parent="@style/sdk_button_text_default.button_text">
+        <item name="android:background">@drawable/selector_button</item>
+    </style>
+
+    <!-- These styles are used in survey.xml -->
+
+    <style name="lvCatSurv_default">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
+
+    <!-- These styles are used in gallery.xml -->
+    <style name="selectBtn_default" parent="@style/sdk_button_text_default.button_text" />
+
+</resources>
