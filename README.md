@@ -2,7 +2,7 @@
 
 ####Clone this repo to get started working with the Survey.com SDK
 
-Please contact your account rep to get your [ORGANIZATION_ID](https://github.com/Survey-Com/survey_sdk_publicdemo/wiki/Getting-an-org_id) before going live, the sample ORGANIZATION_ID is for test data only.
+Please contact your account rep to get your [ORGANIZATION_ID](https://surveycom.zendesk.com/home) before going live, the sample ORGANIZATION_ID is for test data only.
 
 ##Quick Start
 Import android projects **SurveySDK**, **SurveyDemo** and **google-play-services_lib** to your android IDE. These projects were created using _Eclipse_, but you can use _Android Studio_ with these projects easily. **SurveySDK** and **google-play-services_lib** are library projects and when imported ensure that _Is Library_ option is checked in _Properties -> Android_ settings for these projects. 
