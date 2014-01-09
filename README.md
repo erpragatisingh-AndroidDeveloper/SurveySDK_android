@@ -1,4 +1,4 @@
-#Welcome to the Survey.com android SDK and demo application
+#Welcome to Survey.com android SDK and demo application
 
 ####Clone this repo to get started working with the Survey.com SDK
 
