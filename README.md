@@ -11,4 +11,4 @@ Import android projects **SurveySDK**, **SurveyDemo** and **google-play-services
 
 Finally, import **SurveyDemo** project and update _Properties -> Android_ settings to reference **google-play-services_lib** and **SurveySDK** library projects correctly. Now compile demo app and run it with android emulator or deploy to your android device. 
 
-_All usage must adhere to our [SDK Usage Agreement and Guideslines](https://github.com/Survey-Com/survey_sdk_publicdemo/wiki/SDK-Usage-Agreement)_
+_All usage must adhere to our [SDK Usage Agreement and Guidelines](https://github.com/Survey-Com/survey_sdk_publicdemo/wiki/SDK-Usage-Agreement)_
